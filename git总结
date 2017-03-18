@@ -1,0 +1,56 @@
+git reset --hard 2e24035(commit)
+
+
+当前分支是release_b2b__vendor2分支：
+
+ git fetch origin release/b2b/vendor:release_b2b_vendor_tmp
+
+从远端的 release/b2b/vendor分支 fetch到本地的release_b2b_vendor_tmp 
+
+release_b2b_vendor_tmp 分支在本地是不存在的，这条命令才会新建的分支
+
+
+
+
+
+merge 分支
+
+anqing@hanqing-MacBookPro:~/workspace/gitrep/hollywant_backend$ git status
+
+位于分支 release_b2b_vendor2
+
+无文件要提交，干净的工作区
+
+hanqing@hanqing-MacBookPro:~/workspace/gitrep/hollywant_backend$ git merge release_b2b_vendor_tmp 
+
+自动合并 
+
+
+
+
+
+git push origin release_b2b__vendor2:release/b2b/vendor
+
+从本地的release_b2b__vendor2分支 push到远端的release/b2b/vendor分支
+
+
+
+
+
+psql -h 127.0.0.1 -p 5432 -U hanqing -d svms1128< /home/hanqing/桌面/svms1128.dump
+
+
+
+
+
+git merge b
+
+      # 将b分支合并到当前分支
+
+同样 git rebase b，也是把 b分支合并到当前分支
+
+
+
+git diff  比较本地分支和远端分支的区别
+
+
